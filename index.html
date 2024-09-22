@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje al Pasado en Nuestras Tierras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url('dinosario.jpg');
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(63, 221, 226, 0.9);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border: 3px solid #333;
+            border-radius: 8px;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .infografia {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .subseccion {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .imagen {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #333;
+        }
+
+        .pozos-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .pozos-column {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .game {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .memory-game {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .memory-card {
+            width: 100px;
+            height: 100px;
+            background-color: #4c93af;
+            cursor: pointer;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .memory-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .memory-card.flipped img {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        .winner-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .winner-message {
+            background-color: #FFFF00;
+            color: #000;
+            padding: 30px;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+        }
+
+        .winner-message img {
+            width: 100px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .confetti {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* Estilo para el movimiento del fondo y el texto */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .rebounding {
+            animation: bounce 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Infografia</h1>
+        <header>
+            <section id=¨Infografia¨>
+                <h2>Infografia museo y pozos</h2>
+                <div class="subseccion">
+                    <div class="DOCTYPE">
+            <img src="holi.jpg" alt="Fósiles de Tortugas Marinas" width="500">
+        </div>
+    </div>
+
+    <header>
+        <h1>Viaje al Pasado en Nuestras Tierras</h1>
+    </header>
+
+    <section id="museo">
+        <h2>¿Qué es el Museo del Fósil?</h2>
+        <div class="subseccion">
+            <p>El Museo del Fósil es un museo comunitario que fue establecido hace 47 años. Su origen está vinculado con el hallazgo del cráneo de un reptil marino del período Cretácico. Samuel Vargas, el primer campesino que descubrió la roca, inició la excavación que reveló la aleta y parte de la columna vertebral del reptil.</p>
+        </div>
+    </section>
+
+    <img src="museo.jpg" alt="Museo" width="400" style="display: block; margin: 0 auto;">
+
+    <section id="historia">
+        <h2>Historia del Museo del Fósil de Villa de Leyva</h2>
+        <div class="subseccion">
+            <h3>Descubrimiento y Fundadores</h3>
+            <p>El 5 de junio de 1977, Samuel Vargas tropezó con unas rocas y descubrió la parte de la aleta y la columna vertebral de un reptil marino. German Suvieta y su hijo identificaron el valor de las rocas y planificaron la excavación. Tito Bernal, tras tres años de lucha, vendió su lote en 1980 para conservar la pieza.</p>
+            <p>Marco Elino Monear, presidente de la junta, lideró la lucha para preservar el fósil. Inicialmente, se cubrió el hallazgo con lonas para evitar su deterioro y se levantó una cubierta para los visitantes.</p>
+            <p>Enrique y German Suvieta dirigieron la excavación del Monquirasaurus boyacensis, un reptil del período Cretácico.</p>
+            <img src="hola.jpg" alt="Descubrimiento" width="400" style="display: block; margin: 0 auto;">
+        </div>
+    </section>
+
+    <div class="subseccion">
+        <h3>Monquirasaurus boyacensis</h3>
+        <p>Este reptil marino mide 7.6 metros desde la punta del hocico hasta la cola, y su cráneo alcanza 3 metros. Con una cola de 12 metros, probablemente vivió entre 70 y 80 años. Se alimentaba de peces, amonitas y tortugas. Su preservación como fósil se debe a la absorción de minerales y la formación de roca sedimentaria.</p>
+        <div class="imagen">
+            <img src="imagen de fosil.jpg" alt="Monquirasaurus boyacensis" width="400">
+        </div>
+    </div>
+
+    <div class="subseccion">
+        <h3>Amonitas</h3>
+        <p>Las amonitas son moluscos con conchas enrolladas y eran alimento para los reptiles marinos. Su presencia es significativa en los fósiles encontrados.</p>
+        <div class="imagen">
+            <img src="amonitas.jpg" alt="Amonitas" width="400">
+        </div>
+    </div>
+
+    <div class="subseccion">
+        <h3>Brachiosaurus leivaensis</h3>
+        <p>El Brachiosaurus leivaensis es una especie de dinosaurio que se ha encontrado en la región de Villa de Leyva. Este dinosaurio herbívoro, conocido por su gran tamaño y cuello largo, es uno de los fósiles destacados del museo. La pieza exhibida incluye parte de la columna vertebral, lo que proporciona información sobre su tamaño y postura.</p>
+        <div class="imagen">
+            <img src="Brachiosaurus leivaensis.jpg" alt="Brachiosaurus leivaensis" width="400">
+        </div>
+    </div>
+
+    <div class="subseccion">
+        <h3>Fósiles de Tortugas Marinas</h3>
+        <p>En el Museo del Fósil también se pueden encontrar fósiles de tortugas marinas que vivieron durante el Cretácico. Estos fósiles ofrecen una visión de la diversidad de vida marina que coexistió con los grandes reptiles como el Monquirasaurus.</p>
+        <div class="imagen">
+            <img src="Fósiles de Tortugas.jpg" alt="Fósiles de Tortugas Marinas" width="400">
+        </div>
+    </div>
+
+    <div class="subseccion">
+        <h3>Vida Marina en el Cretácico</h3>
+        <p>Durante el Cretácico, el área donde se encuentra Villa de Leyva estaba cubierta por un mar profundo. Esto permitió la formación de diversos tipos de fósiles, incluidos corales, moluscos y restos de grandes reptiles marinos.</p>
+        <div class="imagen">
+        </div>
+    </div>
+
+    <section id="pozos-azules">
+        <h2>Pozos Azules</h2>
+        <div class="pozos-container">
+            <div class="pozos-column">
+                <h3>Ubicación</h3>
+                <p>Los Pozos Azules se encuentran a las afueras de Villa de Leyva. Son un atractivo turístico conocido por sus aguas cristalinas y la belleza del paisaje.</p>
+            </div>
+            <div class="pozos-column">
+                <h3>Actividades</h3>
+                <p>En los Pozos Azules, los visitantes pueden disfrutar de actividades como el senderismo, paseos en kayak y exploración del entorno natural. Es un lugar perfecto para disfrutar de la biodiversidad de la región.</p>
+            </div>
+            <div class="pozos-column">
+                <h3>Consejos</h3>
+                <p>Se recomienda llevar protector solar y suficiente agua, además de respetar el entorno natural y no dejar basura en el lugar.</p>
+            </div>
+        </div>
+        <div class="subseccion">
+            <h3>Pozos Azules</h3>
+            <div class="pozos-container">
+                <div class="pozos-column">
+                    <h4>¿Qué son?</h4>
+                    <p>Los Pozos Azules son un conjunto de lagunas artificiales ubicadas a pocos kilómetros de Villa de Leyva. Estas lagunas presentan un color azul intenso debido a los minerales presentes en el agua y el suelo.</p>
+                    <div class="imagen">
+                        <img src="pozo1.jpg"width="400">
+                </div>
+                <div class="pozos-column">
+                    <h4>Origen</h4>
+                    <p>Las aguas de los Pozos Azules adquieren su color por la reflexión de la luz solar y la presencia de minerales. Estas características únicas los convierten en un atractivo turístico.</p>
+                    <div class="imagen">
+                        <img src="pozo2.jpg"width="400">
+                </div>
+            </div> 
+        </div>
+        <section></section>
+        <div class="game">
+            <h3>Juego de Memoria: Encuentra los Fósiles</h3>
+            <p>Encuentra los pares de fósiles idénticos haciendo clic en las tarjetas.</p>
+            <div class="memory-game">
+                <div class="memory-card" data-fossil="1">
+                    <img src="amonitas.jpg" alt="Fósil 1">
+                </div>
+                <div class="memory-card" data-fossil="2">
+                    <img src="imagen de fosil.jpg" alt="Fósil 2">
+                </div>
+                <div class="memory-card" data-fossil="3">
+                    <img src="Corales del Cretácico.jpg" alt="Fósil 3">
+                </div>
+                <div class="memory-card" data-fossil="4">
+                    <img src="Fósiles de Tortugas.jpg" alt="Fósil 4">
+                </div>
+                <div class="memory-card" data-fossil="1">
+                    <img src="amonitas.jpg" alt="Fósil 1">
+                </div>
+                <div class="memory-card" data-fossil="2">
+                    <img src="imagen de fosil.jpg" alt="Fósil 2">
+                </div>
+                <div class="memory-card" data-fossil="3">
+                    <img src="Corales del Cretácico.jpg" alt="Fósil 3">
+                </div>
+                <div class="memory-card" data-fossil="4">
+                    <img src="Fósiles de Tortugas.jpg" alt="Fósil 4">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="winner-overlay" id="winner-overlay">
+    <div class="winner-message">
+        ¡Ganaste! 👑
+        <canvas class="confetti" id="confettiCanvas"></canvas>
+    </div>
+    </div>
+    
+    <footer>
+    <p> Museo  - Pozos - Villa de leyva</p>
+    </footer>
+    <script>
+    const cards = document.querySelectorAll('.memory-card');
+    let hasFlippedCard = false;
+    let lockBoard = false;
+    let firstCard, secondCard;
+    
+    function flipCard() {
+        if (lockBoard) return;
+        if (this === firstCard) return;
+    
+        this.classList.add('flipped');
+    
+        if (!hasFlippedCard) {
+            hasFlippedCard = true;
+            firstCard = this;
+            return;
+        }
+    
+        secondCard = this;
+        checkForMatch();
+    }
+    
+    function checkForMatch() {
+        const isMatch = firstCard.dataset.fossil === secondCard.dataset.fossil;
+    
+        isMatch ? disableCards() : unflipCards();
+    }
+    
+    function disableCards() {
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+        resetBoard();
+        if (document.querySelectorAll('.memory-card:not(.flipped)').length === 0) {
+            showWinner();
+        }
+    }
+    
+    function unflipCards() {
+        lockBoard = true;
+    
+        setTimeout(() => {
+            firstCard.classList.remove('flipped');
+            secondCard.classList.remove('flipped');
+            resetBoard();
+        }, 1500);
+    }
+    
+    function resetBoard() {
+        [hasFlippedCard, lockBoard] = [false, false];
+        [firstCard, secondCard] = [null, null];
+    }
+    
+    function showWinner() {
+        document.getElementById('winner-overlay').style.display = 'flex';
+        startConfetti();
+    }
+    
+    function startConfetti() {
+        const canvas = document.getElementById('confettiCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    
+        const confettiColors = ['#ff0', '#0f0', '#00f', '#f00', '#ff0'];
+        const confettiCount = 200;
+        const confettiArray = [];
+    
+        for (let i = 0; i < confettiCount; i++) {
+            confettiArray.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 10 + 2,
+                color: confettiColors[Math.floor(Math.random() * confettiColors.length)],
+                velocityX: (Math.random() - 0.5) * 5,
+                velocityY: Math.random() * 10 + 5
+            });
+        }
+    
+        function drawConfetti() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            confettiArray.forEach(confetti => {
+                ctx.beginPath();
+                ctx.arc(confetti.x, confetti.y, confetti.radius, 0, 2 * Math.PI);
+                ctx.fillStyle = confetti.color;
+                ctx.fill();
+            });
+        }
+    
+        function updateConfetti() {
+            confettiArray.forEach(confetti => {
+                confetti.x += confetti.velocityX;
+                confetti.y += confetti.velocityY;
+                confetti.velocityY *= 0.98;
+                if (confetti.y > canvas.height) {
+                    confetti.y = 0;
+                    confetti.x = Math.random() * canvas.width;
+                }
+            });
+        }
+    
+        function animate() {
+            drawConfetti();
+            updateConfetti();
+            requestAnimationFrame(animate);
+        }
+    
+        animate();
+    }
+    
+    document.getElementById('winner-overlay').addEventListener('click', () => {
+        document.getElementById('winner-overlay').style.display = 'none';
+    });
+    
+    (function shuffle() {
+        cards.forEach(card => {
+            let randomPos = Math.floor(Math.random() * 8);
+            card.style.order = randomPos;
+        });
+    })();
+    
+    cards.forEach(card => card.addEventListener('click', flipCard));
+    </script>
+    </body>
+   </html>
+    
